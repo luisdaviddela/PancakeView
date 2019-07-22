@@ -12,6 +12,7 @@ namespace PVXF
             InitializeComponent();
 
             MainPage = new MainPage();
+            //MainPage = new NavigationPage(new TestView());
         }
 
         protected override void OnStart()

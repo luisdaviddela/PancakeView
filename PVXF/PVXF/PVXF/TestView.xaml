@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             
+             x:Class="PVXF.TestView">
+    <NavigationPage.TitleView>
+        <Grid>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="XamSharp" FontSize="Large" FontAttributes="Bold"/>
+                <Image 
+                    Source="XamSharpLogo.jpg" 
+                    HeightRequest="50" WidthRequest="50"/>
+                <Label Text="Blog" FontSize="Large" FontAttributes="Bold"/>
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
+    <ContentPage.Content>
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <yummy:PancakeView 
+                    BackgroundGradientStartColor=" #33ffff " 
+                    BackgroundGradientEndColor=" #000303  " 
+                    BackgroundGradientAngle="0" 
+                    AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                    AbsoluteLayout.LayoutFlags="All" 
+                HorizontalOptions="FillAndExpand"
+                    HeightRequest="150"/>
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout Padding="40">
+                    <Label Text="Mono Project" 
+                           TextColor="Black"
+                           FontSize="30"
+                           HorizontalOptions="Center"/>
+                    <BoxView Color="Gray" 
+                             WidthRequest="8" 
+                             HeightRequest="100"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"/>
+                    <yummy:PancakeView 
+                        BackgroundColor="#bfcdde" 
+                        HorizontalOptions="FillAndExpand" 
+                        BorderIsDashed="true" 
+                        HeightRequest="150" 
+                        CornerRadius="40,10,40,10" 
+                        BorderThickness="4" 
+                        BorderColor="#456287">
+
+                        <StackLayout>
+                            <Image Source="monologo.png" 
+                                   HeightRequest="50"
+                                   WidthRequest="50"
+                                   HorizontalOptions="Center" Margin="0,24"/>
+                            <Label 
+                                Text="mono-project.com Cross Platform, open source .NET development framework." 
+                                HorizontalOptions="CenterAndExpand" 
+                                VerticalOptions="CenterAndExpand" 
+                                FontAttributes="Bold"
+                                TextColor="#456287" />
+                        </StackLayout>
+                    </yummy:PancakeView>
+                    <!--dot net-->
+                    <Label Text=".Net" 
+                           TextColor="Black"
+                           FontSize="30"
+                           HorizontalOptions="Center"/>
+                    <BoxView Color="Gray" 
+                             WidthRequest="8" 
+                             HeightRequest="100"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"/>
+                    <yummy:PancakeView BackgroundColor="Purple" 
+                                   BorderThickness="4" 
+                                   CornerRadius="60,0,0,60" 
+                                   HorizontalOptions="FillAndExpand" 
+                                   HeightRequest="150">
+                        <Grid HorizontalOptions="Center"
+                              VerticalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Image Source="MicrosoftNet.png" 
+                                   HeightRequest="50"
+                                   Grid.Row="0"
+                                   WidthRequest="50"
+                                   HorizontalOptions="Center" Margin="0,24"/>
+                            <Label 
+                                Grid.Row="1"
+                                Text="NET is a developer platform with tools and libraries for building any type of app" 
+                                HorizontalOptions="CenterAndExpand" 
+                                VerticalOptions="CenterAndExpand" 
+                                FontAttributes="Bold"
+                                TextColor="White" />
+                        </Grid>
+                    </yummy:PancakeView>
+                    <!--c #-->
+                    <Label Text="Xamarin" 
+                           TextColor="Black"
+                           FontSize="30"
+                           HorizontalOptions="Center"/>
+                    <BoxView Color="Gray" 
+                             WidthRequest="8" 
+                             HeightRequest="100"
+                             HorizontalOptions="Center"
+                             VerticalOptions="Center"/>
+                    <yummy:PancakeView 
+                    HasShadow="true" 
+                    BorderIsDashed="true" 
+                    BorderColor="OrangeRed" 
+                    BorderThickness="3" 
+                    CornerRadius="60,0,0,60" 
+                    HorizontalOptions="FillAndExpand" 
+                    HeightRequest="150">
+                        <StackLayout>
+                            <Image Source="cshapr.png" 
+                                   HeightRequest="50"
+                                   WidthRequest="50"
+                                   HorizontalOptions="Center" Margin="0,24"/>
+                            <Label 
+                                Text="NET is a developer platform with tools and libraries for building any type of app" 
+                                HorizontalOptions="CenterAndExpand" 
+                                VerticalOptions="CenterAndExpand" 
+                                FontAttributes="Bold"
+                                TextColor="#456287" />
+                        </StackLayout>
+                    </yummy:PancakeView>
+                </StackLayout>
+            </ScrollView>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
