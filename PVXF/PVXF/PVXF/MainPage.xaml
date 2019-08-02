@@ -5,6 +5,19 @@
              xmlns:rainbows="clr-namespace:Xamarin.Forms.DebugRainbows;assembly=Xamarin.Forms.DebugRainbows" xmlns:local="clr-namespace:PVXF"
              Title="Pancake View"
              x:Class="PVXF.MainPage">
+    <NavigationPage.TitleView>
+        <Grid>
+            <StackLayout Orientation="Horizontal" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+                <Label Text="XamSharp" FontSize="Large" FontAttributes="Bold"/>
+                <Image 
+                    Source="XamSharpLogo.jpg" 
+                    HeightRequest="50" WidthRequest="50"/>
+                <Label Text="Blog" FontSize="Large" FontAttributes="Bold"/>
+            </StackLayout>
+        </Grid>
+    </NavigationPage.TitleView>
     <ScrollView>
         <StackLayout>
             <yummy:PancakeView 

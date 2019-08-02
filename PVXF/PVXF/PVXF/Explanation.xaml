@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="PVXF.Explanation">
+    <ContentPage.Content>
+        <StackLayout Spacing="20">
+            <yummy:PancakeView 
+                BorderIsDashed="true" 
+                BorderColor="Cornsilk"
+                BackgroundColor="DarkKhaki" 
+                HorizontalOptions="FillAndExpand" 
+                HeightRequest="150" 
+                BorderThickness="4">
+                <StackLayout >
+                    <Label Text="Bordes lineados"
+                           FontAttributes="Bold"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </yummy:PancakeView>
+            
+            <yummy:PancakeView 
+                    HasShadow="true"
+                    BorderThickness="3" 
+                    HorizontalOptions="FillAndExpand" 
+                    HeightRequest="150">
+                <StackLayout>
+                    <Label Text="Sombreado"
+                           FontAttributes="Bold"
+                           VerticalOptions="CenterAndExpand" 
+                           HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView
+                BackgroundGradientEndColor="Red" 
+                BackgroundGradientStartColor="Yellow" 
+                BackgroundGradientAngle="0" 
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="150">
+                <StackLayout>
+                    <Label Text="Degreadado" FontAttributes="Bold" 
+                           TextColor="Black" 
+                           VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Image 
+                        VerticalOptions="CenterAndExpand" 
+                        HorizontalOptions="CenterAndExpand"
+                        HeightRequest="100" 
+                        WidthRequest="100" 
+                        Source="avion.png"/>
+                </StackLayout>
+            </yummy:PancakeView>
+
+            <yummy:PancakeView
+                BackgroundGradientEndColor=" #9b59b6 " 
+                BackgroundGradientStartColor="#ff5733" 
+                BackgroundGradientAngle="90" 
+                HorizontalOptions="FillAndExpand"
+                HeightRequest="150">
+                <StackLayout >
+                    <Label Text="Degreadado con diferente ángulo de inicio..." 
+                           FontAttributes="Italic" 
+                           TextColor="White" 
+                           FontSize="Large"
+                           
+                           VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                </StackLayout>
+            </yummy:PancakeView>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

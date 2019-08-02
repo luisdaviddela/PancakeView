@@ -11,7 +11,7 @@ namespace PVXF
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new MainTab();
             //MainPage = new NavigationPage(new TestView());
         }
 
