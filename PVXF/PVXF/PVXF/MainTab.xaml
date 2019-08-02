@@ -4,6 +4,7 @@
             xmlns:local="clr-namespace:PVXF"
             x:Class="PVXF.MainTab">
   <!--Pages can be added as references or inline-->
+    <local:TestViewDos></local:TestViewDos>
     <local:Explanation></local:Explanation>
     <local:TestView></local:TestView>
 </TabbedPage>

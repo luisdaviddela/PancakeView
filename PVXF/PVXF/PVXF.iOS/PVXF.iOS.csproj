@@ -172,4 +172,16 @@
   <ItemGroup>
     <BundleResource Include="Resources\granduniverse.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\venus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\marte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\saturn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tierra.png" />
+  </ItemGroup>
 </Project>

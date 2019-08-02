@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace PVXF
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class NewView : ContentPage
+	public partial class TestViewDos : ContentPage
 	{
-		public NewView ()
+		public TestViewDos ()
 		{
 			InitializeComponent ();
 		}

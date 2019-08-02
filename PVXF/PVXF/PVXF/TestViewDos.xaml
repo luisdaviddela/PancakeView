@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             x:Class="PVXF.TestViewDos">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout 
+                    BackgroundColor=" #4a235a "
+                    Padding="1"
+                    Spacing="15">
+                <yummy:PancakeView 
+                        HasShadow="True"
+                        BorderThickness="1"
+                        HeightRequest="150"
+                        HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="8">
+                        <yummy:PancakeView 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundGradientStartColor=" #4a235a "
+                            BackgroundGradientEndColor=" #633974 "
+                            >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="saturn.png"
+                                       HeightRequest="100"
+                                       WidthRequest="100"/>
+                                <Label 
+                                    FontAttributes="Bold"
+                                    VerticalTextAlignment="Start"
+                                    TextColor="White"
+                                    Text="Saturno es el sexto planeta del sistema solar, el segundo en tamaño y masa después de Júpiter y el único con un sistema de anillos visible desde la Tierra. Su nombre proviene del dios romano Saturno."/>
+                            </StackLayout>
+                        </yummy:PancakeView>
+
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView 
+                        HasShadow="True"
+                        BorderThickness="1"
+                        HeightRequest="150"
+                        HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="8">
+                        <yummy:PancakeView 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundGradientStartColor=" #4a235a "
+                            BackgroundGradientEndColor=" #633974 "
+                            >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="tierra.png"
+                                       HeightRequest="100"
+                                       WidthRequest="100"/>
+                                <Label 
+                                    FontAttributes="Bold"
+                                    VerticalTextAlignment="Start"
+                                    TextColor="White"
+                                    Text="La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después.​ Es el hogar de millones de especies, incluyendo los seres humanos y actualmente el único cuerpo astronómico donde se conoce la existencia de vida."/>
+                            </StackLayout>
+                        </yummy:PancakeView>
+
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView 
+                        HasShadow="True"
+                        BorderThickness="1"
+                        HeightRequest="150"
+                        HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="8">
+                        <yummy:PancakeView 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundGradientStartColor=" #4a235a "
+                            BackgroundGradientEndColor=" #633974 "
+                            >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="marte.png"
+                                       HeightRequest="100"
+                                       WidthRequest="100"/>
+                                <Label 
+                                    FontAttributes="Bold"
+                                    VerticalTextAlignment="Start"
+                                    TextColor="White"
+                                    Text="Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar. También es conocido como el planeta rojo"/>
+                            </StackLayout>
+                        </yummy:PancakeView>
+
+                    </StackLayout>
+                </yummy:PancakeView>
+                <yummy:PancakeView 
+                        HasShadow="True"
+                        BorderThickness="1"
+                        HeightRequest="150"
+                        HorizontalOptions="FillAndExpand">
+                    <StackLayout Padding="8">
+                        <yummy:PancakeView 
+                            VerticalOptions="FillAndExpand"
+                            HorizontalOptions="FillAndExpand"
+                            BackgroundGradientStartColor=" #4a235a "
+                            BackgroundGradientEndColor=" #633974 "
+                            >
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="venus.png"
+                                       HeightRequest="100"
+                                       WidthRequest="100"/>
+                                <Label 
+                                    FontAttributes="Bold"
+                                    VerticalTextAlignment="Start"
+                                    TextColor="White"
+                                    Text="Venus es el segundo planeta del sistema solar en orden de distancia desde el Sol, el sexto en cuanto a tamaño, ordenados de mayor a menor. Al igual que Mercurio, carece de satélites naturales."/>
+                            </StackLayout>
+                        </yummy:PancakeView>
+
+                    </StackLayout>
+                </yummy:PancakeView>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
